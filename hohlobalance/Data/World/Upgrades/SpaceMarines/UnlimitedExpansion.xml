@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="10" icon="Upgrades/UnlimitedExpansion">
+    <requiredUpgrades>
+		<upgrade name="SpaceMarines/TertiaryExpansion"/>
+	</requiredUpgrades>
+</upgrade>
