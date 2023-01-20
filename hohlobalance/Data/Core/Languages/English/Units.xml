@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<entry name="AstraMilitarum/ArmoredSentinel" value="Armoured Sentinels"/>
+	<entry name="AstraMilitarum/ArmoredSentinelDescription" value="Heavy armoured walker unit specialized in focusing fortified or armored targets."/>
+	<entry name="AstraMilitarum/ArmoredSentinelFlavor" value="The Sentinel is a fast-moving combat walker employed to scout dense terrain and provide close infantry fire support. With surprising speed and locomotive dexterity, Sentinels can traverse terrain that would confound other armoured vehicles. The armoured  Sentinels, in particular, are used to engage fortified or heavy armored targets."/>
+	
+	<entry name="Neutral/KastelanRobot" value="Kastelan Robot"/>
+	<entry name="Neutral/KastelanRobotDescription" value="Extremely durable and heavily armed combat robot unit."/>
+	<entry name="Neutral/KastelanRobotFlavor" value="Kastelan Robots are ancient monstrosities that stamp to war, each an unliving giant assigned a deadly purpose by its master. Soulless, these metallic golems are given thought only by the doctrina wafers in their recessed chestslots and the Cybernetica Datasmiths that program their every move. These machines are walking relics from aeons past, and all the deadlier for it—the air nearby thrums with power, bullets ricocheting from repulsor fields that glow like golden cages around them. Volleys of phosphor blasts and promethium incinerate their foes wherever they may hide, and crushing fists bring ruin wherever they strike. The violence meted out by each maniple is as inspiring to the Omnissiah's faithful as it is terrifying to his foes."/>
+	
+	<entry name="AstraMilitarum/MarauderDestroyer" value="Marauder Destroyer"/>
+	<entry name="AstraMilitarum/MarauderDestroyerDescription" value="Super-heavy aircraft unit that obliterates ground targets with overwhelming direct firepower."/>
+	<entry name="AstraMilitarum/MarauderDestroyerFlavor" value="Sturdily built and boasting a colossal payload for its size, the Marauder is the archetypal super-heavy aircraft of the Imperium. Powerful engines and capacious fuel tanks give the Marauder a substantial operational reach and, furthermore, allow squadrons to operate effectively in times of sporadic resupply."/>
+	
+	<entry name="AstraMilitarum/MarauderDestroyer" value="Marauder Destroyer"/>
+	<entry name="AstraMilitarum/MarauderDestroyerDescription" value="Super-heavy aircraft unit that obliterates ground targets with overwhelming direct firepower."/>
+	<entry name="AstraMilitarum/MarauderDestroyerFlavor" value="Sturdily built and boasting a colossal payload for its size, the Marauder is the archetypal super-heavy aircraft of the Imperium. Powerful engines and capacious fuel tanks give the Marauder a substantial operational reach and, furthermore, allow squadrons to operate effectively in times of sporadic resupply."/>
+	
+	<entry name="AdeptusMechanicus/SkitariiVanguardMk2" value="Arquebus Skitarii Vanguards"/>
+	<entry name="AdeptusMechanicus/SkitariiVanguardMk2Description" value="Advanced Doctrina Imperatives infantry unit with Transuranic arquebus weapons and an aura that cripples enemy infantry and monstrous creatures."/>
+	<entry name="AdeptusMechanicus/SkitariiVanguardMk2Flavor" value="The Vanguard of the Skitarii cohorts are feared throughout the Imperium, for they use the baleful energies of the forge worlds as their weapon. Equipped with pack generators that bleed potent energy by-products, these Omnissian martyrs are so saturated in radiation that even to approach them is to succumb to their peculiar curse. Their  long-barrelled weapon epitomises the precision and inhuman efficiency."/>
+	
+	<entry name="SpaceMarines/TechMarine" value="Techmarine"/>
+	<entry name="SpaceMarines/TechMarineDescription" value="Space Marine technician and engineer."/>
+	<entry name="SpaceMarines/TechMarineFlavor" value="Techmarines are Space Marine technicians and engineers as well as a full Astartes Battle-Brothers of their Chapter. They are fully initiated members of both the Cult Mechanicus and their Chapter."/>
+	
+	<entry name="AdeptusMechanicus/IronstriderBallistariusMk2" value="Ironstrider Ballistarius Mk2"/>
+	<entry name="AdeptusMechanicus/IronstriderBallistariusMk2Description" value="Doctrina Imperatives fast walker antitank unit ."/>
+	<entry name="AdeptusMechanicus/IronstriderBallistariusMk2Flavor" value="Ironstrider Ballistarii are peerless marksmen. Stalking at the fringes of each Skitarii maniple, the Ballistarii hunt down enemy commanders and spiritual leaders, knowing that to slay such individuals is an efficient way to degrade the enemy’s operative capabilities. Equally capable of disabling the war engines of the enemy, these unmatched riflemen will trample down those who block their passage until they have the perfect vantage point for their shot."/>
+	
+	
+</language>

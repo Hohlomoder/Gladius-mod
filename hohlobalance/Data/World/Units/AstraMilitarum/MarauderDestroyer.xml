@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+	<model>
+		<unit mesh="Units/AstraMilitarum/MarauderBomber"
+				material="Units/AstraMilitarum/MarauderBomber"
+				position="0 0 64"
+				idleAnimation="Units/AstraMilitarum/MarauderBomberIdle"
+				idleAnimationCount="2"
+				idleContinuously="1"
+				normalWeight="1.0"
+				scale="1.3 1.3 1.3"
+				explosionsBone="Hull"/>
+	</model>	
+	<weapons>
+	    	
+		<weapon name="TwinLinkedLascannon" count="1" >
+			<model>
+				<beamWeapon mesh="Weapons/AstraMilitarum/MarauderBomberLascannon"
+						material="Units/AstraMilitarum/MarauderBomber"
+						bone="Hull"
+						muzzleBone=".LascannonMuzzle"/>
+			</model>
+		</weapon>
+		
+	    <weapon name="TwinLinkedAutocannon" count="2">
+			<model>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/ThunderboltTwinLinkedAutocannons"
+						material="Units/AstraMilitarum/Thunderbolt"
+						bone="Hull"
+						muzzleBone=".TwinLinkedAutocannonMuzzle"
+						muzzleCount="4"/>
+			</model>
+		</weapon>
+					
+		<weapon name="TwinLinkedHeavyBolter" count="2" >
+			<model>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/MarauderBomberRearBolters"
+						material="Units/AstraMilitarum/MarauderBomber"
+						bone="Hull"
+						muzzleBone=".BolterRearMuzzle"
+						effectFaceWeight="0"/>
+			</model>
+		</weapon>
+		
+		<weapon name="TwinLinkedHeavyBolter" count="2" 
+		        requiredUpgrade="AstraMilitarum/AdditionalHeavyBolters" >
+		 
+			<model>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/MarauderBomberRearBolters"
+						material="Units/AstraMilitarum/MarauderBomber"
+						bone="Hull"
+						muzzleBone=".BolterRearMuzzle"
+						effectFaceWeight="0"/>
+			</model>
+		</weapon>
+				
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="7"/> <!-- %armor base armor=11/11/10 3+ save = 8armor -->
+				<cargoSlotsRequired base="0"/>
+				<energyUpkeep base="12.0"/> <!-- %energyUpkeep base tier=11 factor=1 -->
+				<energyCost base="120.0"/> <!-- %energyCost base tier=11 factor=0.5 -->
+				<hitpointsMax base="72.0"/> <!-- %hitpointsMax base armor=11/11/10 wounds=9 -->
+				<oreCost base="120.0"/> <!-- %oreCost base tier=11 factor=0.5 -->
+				<moraleMax base="12"/> <!-- %moraleMax base leadership=8 -->
+				<movementMax base="5"/>
+				<productionCost base="60.0"/> <!-- %productionCost base tier=11 factor=1 -->
+				<rangedAccuracy base="8"/> <!-- %rangedAccuracy base ballisticSkill= 4+!!!  -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseAircraftScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action	animation="Units/AstraMilitarum/MarauderBomberAttack"
+						beginFire="0.1" endFire="2.5"/>
+			</model>				
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/AstraMilitarum/MarauderBomberDie"
+						sound="Units/LargeVehicleDie"
+						soundCount="3"
+						soundDelay="0.2"/>
+			</model>		
+		</die>
+		<move>
+			<model>
+				<action sound="Units/AstraMilitarum/MarauderBomberMove"
+						soundCount="3"/>
+			</model>				
+		</move>
+		<auraOfFear passive="1">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" excludeRadius="0" radius="1">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Fear"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</auraOfFear>
+		
+		<dispenseChaff consumedActionPoints="0" consumedMovement="0"
+		 		requiredActionPoints="0"
+				cooldown="5"
+				requiredUpgrade="AstraMilitarum/ChaffLauncher">
+			<model>
+				<action sound="Actions/SmokeScreen"/>
+			</model>
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait duration="1" name="Chaff"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</dispenseChaff>
+		
+	</actions>
+	<traits>
+		<trait name="ExtraVehicleArmour" requiredUpgrade="AstraMilitarum/ExtraVehicleArmour"/>
+		<trait name="Flyer"/>
+		<trait name="SuperHeavy"/>
+		<trait name="Vehicle"/>
+	</traits>
+</unit>
